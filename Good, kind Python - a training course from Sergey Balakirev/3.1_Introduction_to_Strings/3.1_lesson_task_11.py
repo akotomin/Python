@@ -9,4 +9,4 @@
 
 
 a, b = input().split()
-print('Коды: ' + a + ' = ' + str(ord(a)) + ', ' + b + ' = '+ str(ord(b)))
+print('Коды: ' + a + ' = ' + str(ord(a)) + ', ' + b + ' = ' + str(ord(b)))
