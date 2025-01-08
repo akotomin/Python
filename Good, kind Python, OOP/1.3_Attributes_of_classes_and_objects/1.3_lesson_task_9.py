@@ -12,3 +12,19 @@
 # fig1 в одну строчку через пробел в порядке, указанном в задании.
 
 
+class Figure:
+    type_fig = 'ellipse'
+    color = 'red'
+
+
+fig1 = Figure()
+
+
+dct = {'start_pt': (10, 5), 'end_pt': (100, 20), 'color': 'blue'}
+
+for key, value in dct.items():
+    setattr(fig1, key, value)
+
+del fig1.color
+
+print(*fig1.__dict__)
