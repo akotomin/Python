@@ -39,16 +39,28 @@ class GamePole:
         self.N = N
         self.M = M
         self.pole = [[Cell() for _ in range(N)] for _ in range(N)]
+        self.init()
 
     def init(self):
+        # Добавляем мины на поле
         mines = random.sample(range(self.N * self.N), self.M)
         for mine in mines:
             row = mine // self.N
             col = mine % self.N
             self.pole[row][col].mine = True
 
-        return self.pole
+        # Обновляем параметр around_mines для соседей
+        indexes = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)]
+        for x in range(self.N):
+            for y in range(self.N):
+                if not self.pole[x][y].mine:
+                    self.pole[x][y].around_mines = sum(
+                        (self.pole[x+i][y+j].mine for i, j in indexes if 0 <= x+i < self.N and 0 <= y+j < self.N)
+                    )
+
+    def show(self):
+        for row in self.pole:
+            print(*map(lambda cell: "#" if not cell.fl_open else cell.around_mines if not cell.mine else '*', row))
 
 
-pole = GamePole(3, 5)
-print(pole.init())
+pole_game = GamePole(10, 12)
