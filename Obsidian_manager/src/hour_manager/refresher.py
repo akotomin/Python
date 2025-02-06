@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../.
 
 # Загружаем .env
 dotenv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.env"))
-load_dotenv(dotenv_path)
+print(load_dotenv(dotenv_path))
 
 from const import DATE_FORMAT
 from config import LAST_RUN_FILE, REGULAR_PATH_FILE, TASKS_PATH, LAST_DATE
