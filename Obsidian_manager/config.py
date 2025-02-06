@@ -1,3 +1,10 @@
+from dotenv import load_dotenv
+import os
+
+# Определяем путь к .env (он лежит в корне проекта)
+dotenv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "./.env"))
+load_dotenv(dotenv_path)  # Загружаем переменные
+
 from os import getenv
 
 # Переменные для календаря
@@ -40,3 +47,6 @@ REGULAR_PATH_FILE = getenv('REGULAR_PATH_FILE')
 
 # Путь к папке с задачами в Obsidian
 TASKS_PATH = getenv('TASKS_PATH')
+
+# Дата последнего запуска файла
+LAST_DATE = getenv("MY_DATE")
