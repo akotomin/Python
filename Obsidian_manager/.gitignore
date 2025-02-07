@@ -2,6 +2,7 @@ venv
 .idea
 Obsidian_manager/__pycache__/
 Obsidian_manager/src/hour_manager/__pycache__/
+__pycache__
 last_run.txt
 requirements.txt
 .env
