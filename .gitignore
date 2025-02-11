@@ -1,4 +1,5 @@
 .DS_Store
+.idea
 Python/Obsidian_manager/.idea
 Python/Obsidian_manager/__pycache__
 Python/Obsidian_manager/src/hour_manager/__pycache__
