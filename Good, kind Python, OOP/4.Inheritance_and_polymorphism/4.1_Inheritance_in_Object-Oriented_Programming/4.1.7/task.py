@@ -1,40 +1,20 @@
-class GenericView:
-    def __init__(self, methods=('GET',)):
-        self.methods = methods
+class Singleton:
+    __main_instance = None
+    __instance = None
 
-    def get(self, request):
-        return ""
+    def __new__(cls, *args, **kwargs):
+        if cls == Singleton:
+            if cls.__main_instance is None:
+                cls.__main_instance = super().__new__(cls)
+                return cls.__main_instance
 
-    def post(self, request):
-        pass
-
-    def put(self, request):
-        pass
-
-    def delete(self, request):
-        pass
+        if cls.__instance is None:
+            cls.__instance = super().__new__(cls)
+        return cls.__instance
 
 
-class DetailView(GenericView):
-    def __init__(self, methods=('GET',)):
-        super().__init__(methods)
+class Game(Singleton):
+    def __init__(self, name):
+        if 'name' not in self.__dict__:
+            self.name = name
 
-    def render_request(self, request: dict, method: str):
-        if method not in self.methods:
-            raise TypeError('данный запрос не может быть выполнен')
-
-        req = self.__getattribute__(method.lower())
-
-        return req(request)
-
-    def get(self, request):
-        if not isinstance(request, dict):
-            raise TypeError('request не является словарем')
-        if 'url' not in request.keys():
-            raise TypeError('request не содержит обязательного ключа url')
-        return f"url: {request['url']}"
-
-
-dv = DetailView()
-html = dv.render_request({'url': 'https://site.ru/home'}, 'GET')
-print(html)
