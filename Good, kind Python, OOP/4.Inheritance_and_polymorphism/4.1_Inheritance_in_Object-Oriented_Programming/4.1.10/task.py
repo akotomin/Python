@@ -1,39 +1,39 @@
-class Validator:
-    def __call__(self, data):
-        if self._is_valid(data):
-            return data
+class Vector:
+    def __init__(self, *coords):
+        self.coords = coords
 
-        raise ValueError('данные не прошли валидацию')
+    def get_coords(self):
+        return self.coords
 
-    def _is_valid(self, data):
-        return True
+    def _len_coords(self, coords):
+        if len(self.coords) != len(coords):
+            raise TypeError('размерности векторов не совпадают')
 
+    def __add__(self, other):
+        self._len_coords(other.coords)
+        new_coords = tuple(a + b for a, b in zip(self.coords, other.coords))
+        return Vector(*new_coords)
 
-class IntegerValidator(Validator):
-    def __init__(self, min_value, max_value):
-        self.min_value = min_value
-        self.max_value = max_value
-
-    def _is_valid(self, data):
-        if isinstance(data, int) and self.min_value <= data <= self.max_value:
-            return True
-        else:
-            return False
-
-
-class FloatValidator(Validator):
-    def __init__(self, min_value, max_value):
-        self.min_value = min_value
-        self.max_value = max_value
-
-    def _is_valid(self, data):
-        if isinstance(data, float) and self.min_value <= data <= self.max_value:
-            return True
-        else:
-            return False
+    def __sub__(self, other):
+        self._len_coords(other.coords)
+        new_coords = tuple(a - b for a, b in zip(self.coords, other.coords))
+        return Vector(*new_coords)
 
 
-integer_validator = IntegerValidator(-10, 10)
-float_validator = FloatValidator(-1, 1)
-res1 = integer_validator(10)  # исключение не генерируется (проверка проходит)
-res2 = float_validator(10)    # исключение ValueError
+class VectorInt(Vector):
+    def __init__(self, *coords):
+        if not all(isinstance(x, int) for x in coords):
+            raise ValueError('координаты должны быть целыми числами')
+        super().__init__(*coords)
+
+    def __add__(self, other):
+        result = super().__add__(other)
+        if any(isinstance(x, float) for x in result.coords):
+            return Vector(*result.coords)
+        return VectorInt(*result.coords)
+
+    def __sub__(self, other):
+        result = super().__sub__(other)
+        if any(isinstance(x, float) for x in result.coords):
+            return Vector(*result.coords)
+        return VectorInt(*result.coords)
