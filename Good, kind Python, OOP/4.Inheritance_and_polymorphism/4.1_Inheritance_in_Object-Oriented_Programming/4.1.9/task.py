@@ -1,39 +1,42 @@
-class Validator:
-    def __call__(self, data):
-        if self._is_valid(data):
-            return data
+class Layer:
+    def __init__(self, name='Layer'):
+        self.next_layer = None
+        self.name = name
 
-        raise ValueError('данные не прошли валидацию')
-
-    def _is_valid(self, data):
-        return True
-
-
-class IntegerValidator(Validator):
-    def __init__(self, min_value, max_value):
-        self.min_value = min_value
-        self.max_value = max_value
-
-    def _is_valid(self, data):
-        if isinstance(data, int) and self.min_value <= data <= self.max_value:
-            return True
-        else:
-            return False
+    def __call__(self, next_layer):
+        self.next_layer = next_layer
+        return next_layer
 
 
-class FloatValidator(Validator):
-    def __init__(self, min_value, max_value):
-        self.min_value = min_value
-        self.max_value = max_value
-
-    def _is_valid(self, data):
-        if isinstance(data, float) and self.min_value <= data <= self.max_value:
-            return True
-        else:
-            return False
+class Input(Layer):
+    def __init__(self, inputs: int):
+        super().__init__('Input')
+        self.inputs = inputs
 
 
-integer_validator = IntegerValidator(-10, 10)
-float_validator = FloatValidator(-1, 1)
-res1 = integer_validator(10)  # исключение не генерируется (проверка проходит)
-res2 = float_validator(10)    # исключение ValueError
+class Dense(Layer):
+    def __init__(self, inputs, outputs, activation):
+        super().__init__('Dense')
+        self.inputs = inputs
+        self.outputs = outputs
+        self.activation = activation
+
+
+class NetworkIterator:
+    def __init__(self, network):
+        self.network = network
+
+    def __iter__(self):
+        layer = self.network
+
+        while layer:
+            yield layer
+            layer = layer.next_layer
+
+
+network = Input(128)
+layer = network(Dense(network.inputs, 1024, 'linear'))
+layer = layer(Dense(layer.inputs, 10, 'softmax'))
+
+for x in NetworkIterator(network):
+    print(x.name)
