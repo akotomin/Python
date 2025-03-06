@@ -8,3 +8,4 @@ class SmartPhone(IteratorAttrs):
         self.model = model
         self.size = size
         self.memory = memory
+
