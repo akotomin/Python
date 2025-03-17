@@ -42,20 +42,3 @@ class Reviewer(Mentor):
 
     def set_mark(self, student, mark):
         student.add_house_marks(mark)
-
-
-lector = Lector("Балакирев С.М.", "Информатика")
-reviewer = Reviewer("Гейтс Б.", "Информатика")
-students = [Student("Иванов А.Б.", "ЭВМд-11"), Student("Гаврилов С.А.", "ЭВМд-11")]
-persons = [lector, reviewer]
-lector.set_mark(students[0], 4)
-lector.set_mark(students[1], 2)
-reviewer.set_mark(students[0], 5)
-reviewer.set_mark(students[1], 3)
-for p in persons + students:
-    print(p)
-# в консоли будет отображено:
-# Лектор Балакирев С.М.: предмет Информатика
-# Эксперт Гейтс Б.: предмет Информатика
-# Студент Иванов А.Б.: оценки на лекциях: [4]; оценки за д/з: [5]
-# Студент Гаврилов С.А.: оценки на лекциях: [2]; оценки за д/з: [3]
