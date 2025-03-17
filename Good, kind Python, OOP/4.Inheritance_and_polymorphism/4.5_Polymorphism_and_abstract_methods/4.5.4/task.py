@@ -18,9 +18,3 @@ class ShopItem(ShopInterface):
 
     def get_id(self):
         return self.__id
-
-
-item1 = ShopItem("имя1", "вес1", "100")
-item2 = ShopItem("имя2", "вес2", "200")
-print(item1.get_id())
-print(item2.get_id())
