@@ -1,15 +1,10 @@
-class Person:
-    __slots__ = '_fio', '_old', '_job'
+class Point:
+    def __init__(self, x, y):
+        self._x = x
+        self._y = y
 
-    def __init__(self, fio, old, job):
-        self._fio = fio
-        self._old = old
-        self._job = job
-
-
-persons = [
-    Person('Суворов', 52, 'полководец'),
-    Person('Рахманинов', 50, 'композитор'),
-    Person('Балакирев', 34, 'программист и преподаватель'),
-    Person('Пушкин', 32, 'поэт и писатель'),
-]
+pt = Point(1, 2)
+try:
+    print(pt.z)
+except AttributeError:
+    print("Атрибут с именем z не существует")
