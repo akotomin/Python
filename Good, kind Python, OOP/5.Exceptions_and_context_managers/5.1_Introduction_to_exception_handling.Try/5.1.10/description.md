@@ -23,7 +23,7 @@
 
 После этого объявите функцию с сигнатурой:
 
-`def is_valid(lst, validators): ...` \
+`def is_valid(lst, validators): ...` 
 
 где `lst` - список из данных; \
 `validators` - список из объектов-валидаторов (объектов классов `FloatValidator` и `IntegerValidator`).
