@@ -33,7 +33,7 @@ class LoginForm:
 
         self._login = login
         self._password = password
-        
+
 
 login_v = ValidatorString(4, 50, "")
 password_v = ValidatorString(10, 50, "!$#@%&?")
