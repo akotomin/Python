@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a368a39-727e-4a74-81fb-5551317c5bb7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;akotomin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:akotomin/Python.git&quot;,
+    &quot;accountId&quot;: &quot;643a655f-f8f4-482b-907b-bed52742082f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2slJRRmdhcAuohJ90Qy0GixYvgj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.task (1).executor": "Run",
+    "Python.task (2).executor": "Run",
+    "Python.task (3).executor": "Run",
+    "Python.task (4).executor": "Run",
+    "Python.task (5).executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.фыв.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "alex__",
+    "last_opened_file_path": "/Users/alextomtomo/Desktop/GitHub_repo/Python/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.5_Context_managers._The_with_statement"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.5_Context_managers._The_with_statement" />
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.4_The_raise_statement_and_custom_exceptions" />
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.3_Propagation_exceptions" />
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.2_Exception_handling._finally_and_else_blocks" />
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.1_Introduction_to_exception_handling.Try" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/3.Magic_methods_of_classes" />
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/2.Access_modes,_properties_and_descriptors" />
+      <recent name="$PROJECT_DIR$/Good, kind Python, OOP/1.First_steps_in_OOP" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a368a39-727e-4a74-81fb-5551317c5bb7" name="Changes" comment="" />
+      <created>1739024219415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739024219415</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/3.Magic_methods_of_classes/3.4_Methods(__add__),(__sub__),(__mul__),(__truediv__)/3.4.4/task.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/3.Magic_methods_of_classes/3.4_Methods(__add__),(__sub__),(__mul__),(__truediv__)/3.4.6/task.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/3.Magic_methods_of_classes/3.4_Methods(__add__),(__sub__),(__mul__),(__truediv__)/3.4.8/task.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/3.Magic_methods_of_classes/3.4_Methods(__add__),(__sub__),(__mul__),(__truediv__)/3.4.8/task.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/4.Inheritance_and_polymorphism/4.1_Inheritance_in_Object-Oriented_Programming/4.1.8/task.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/4.Inheritance_and_polymorphism/4.4_Inheritance._Private_and_Protected_attributes/4.4.8/task.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/4.Inheritance_and_polymorphism/4.7___slots___collection/4.7.7/task.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Good, kind Python, OOP/5.Exceptions_and_context_managers/5.1_Introduction_to_exception_handling.Try/5.1.9/task.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
