@@ -1,8 +1,0 @@
-venv
-.idea
-Obsidian_manager/__pycache__
-Obsidian_manager/src/hour_manager/__pycache__
-.DS_Store
-requirements.txt
-.env
-Obsidian_manager/.DS_Store
